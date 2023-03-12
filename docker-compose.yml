@@ -1,0 +1,11 @@
+version: "3"
+services:
+  app:
+    build: .
+    container_name: go-api
+    working_dir: /app
+    volumes:
+      - ./:/app
+    ports:
+      - "8080:8080"
+    entrypoint: ["go run cmd/server/main.go"]
