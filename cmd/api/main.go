@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/software-engineer-challenge/api/handle"
+	"github.com/software-engineer-challenge/http/handle"
 	"net/http"
 )
 

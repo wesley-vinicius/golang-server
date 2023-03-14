@@ -8,4 +8,22 @@ services:
       - ./:/app
     ports:
       - "8080:8080"
-    entrypoint: ["go run cmd/server/main.go"]
+    command: 'go run cmd/api/main.go'
+    depends_on:
+      - mysqldb
+
+  mysqldb:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=c
+      - MYSQL_USER=dev
+      - MYSQL_PASSWORD=dev
+    ports:
+      - "3306:3306"
+    volumes:
+      - "mysqldb:/var/lib/mysql"
+
+volumes:
+  mysqldb:

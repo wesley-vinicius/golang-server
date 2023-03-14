@@ -9,10 +9,11 @@ type UserRepositoryMemory struct {
 }
 
 func (r *UserRepositoryMemory) SearchByNameOrUserName(query *string) ([]entity.User, error) {
-	println(*query)
 	return r.userList, nil
 }
 
-func (r *UserRepositoryMemory) AddUser(user *entity.User) {
+func (r *UserRepositoryMemory) Create(user *entity.User) (entity.User, error) {
 	r.userList = append(r.userList, *user)
+
+	return *user, nil
 }

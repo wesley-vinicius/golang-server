@@ -5,7 +5,7 @@ type UserReader interface {
 }
 
 type UserWriter interface {
-	AddUser(user *User)
+	Create(user *User) (User, error)
 }
 
 type UserRepository interface {

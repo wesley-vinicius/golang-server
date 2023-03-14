@@ -5,15 +5,15 @@ import (
 	"github.com/software-engineer-challenge/core/entity"
 )
 
-type SearchUser struct {
+type UserService struct {
 	repo entity.UserRepository
 }
 
-func NewSearchUser(repo entity.UserRepository) SearchUser {
-	return SearchUser{repo: repo}
+func NewSearchUser(repo entity.UserRepository) UserService {
+	return UserService{repo: repo}
 }
 
-func (s *SearchUser) Search(query *string) ([]dto.User, error) {
+func (s *UserService) Search(query *string) ([]dto.User, error) {
 	users, err := s.repo.SearchByNameOrUserName(query)
 	if err != nil {
 		return nil, err
@@ -22,9 +22,9 @@ func (s *SearchUser) Search(query *string) ([]dto.User, error) {
 	var response []dto.User
 	for _, u := range users {
 		response = append(response, dto.User{
-			Uuid:     u.Uuid(),
-			Name:     u.Name(),
-			Username: u.Username(),
+			Uuid:     u.Uuid,
+			Name:     u.Name,
+			Username: u.Username,
 		})
 	}
 

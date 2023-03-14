@@ -1,27 +1,15 @@
 package entity
 
 type User struct {
-	uuid     string
-	name     string
-	username string
+	Uuid     string
+	Name     string
+	Username string
 }
 
 func NewUser(uuid, name, username string) User {
 	return User{
-		uuid:     uuid,
-		name:     name,
-		username: username,
+		Uuid:     uuid,
+		Name:     name,
+		Username: username,
 	}
-}
-
-func (u User) Uuid() string {
-	return u.uuid
-}
-
-func (u User) Name() string {
-	return u.name
-}
-
-func (u User) Username() string {
-	return u.username
 }

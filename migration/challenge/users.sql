@@ -1,0 +1,7 @@
+CREATE TABLE `users` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `uuid` VARCHAR(36) NOT NULL,
+  `name` VARCHAR(255) NULL,
+  `user_name` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `uuid_UNIQUE` (`uuid` ASC) VISIBLE);
