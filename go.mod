@@ -1,4 +1,4 @@
-module github.com/software-engineer-challenge
+module github.com/wesley-vinicius/golang-server
 
 go 1.20
 

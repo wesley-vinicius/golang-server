@@ -2,8 +2,8 @@ package repository
 
 import (
 	"database/sql"
-	"github.com/software-engineer-challenge/core/entity"
-	"github.com/software-engineer-challenge/infra/database"
+	"github.com/wesley-vinicius/golang-server/core/entity"
+	"github.com/wesley-vinicius/golang-server/infra/database"
 )
 
 type UserRepositoryMysql struct {

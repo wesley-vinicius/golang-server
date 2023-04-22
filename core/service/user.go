@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/software-engineer-challenge/core/dto"
-	"github.com/software-engineer-challenge/core/entity"
+	"github.com/wesley-vinicius/golang-server/core/dto"
+	"github.com/wesley-vinicius/golang-server/core/entity"
 )
 
 type UserService struct {

@@ -2,8 +2,8 @@ package handle
 
 import (
 	"encoding/json"
-	"github.com/software-engineer-challenge/core/service"
-	"github.com/software-engineer-challenge/infra/repository"
+	"github.com/wesley-vinicius/golang-server/core/service"
+	"github.com/wesley-vinicius/golang-server/infra/repository"
 	"net/http"
 )
 

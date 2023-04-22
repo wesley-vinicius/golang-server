@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/software-engineer-challenge/core/entity"
+	"github.com/wesley-vinicius/golang-server/core/entity"
 )
 
 type UserRepositoryMemory struct {

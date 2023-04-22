@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/software-engineer-challenge/http/handle"
+	"github.com/wesley-vinicius/golang-server/http/handle"
 	"net/http"
 )
 
